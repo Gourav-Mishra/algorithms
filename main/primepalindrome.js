@@ -9,11 +9,16 @@ var read=readline.createInterface(
 function primepalindrome()
 {
     
+    read.question("Enter the minNumber ",function(minNumber){
         read.question("Enter the maxNumber: ",function(maxNumber){
-        utility.primepalindrome(maxNumber)
+            var a=parseInt(minNumber);
+            var b=parseInt(maxNumber);
+        utility.primepalindrome(a,b);
         read.close();
     });
         
 
+});
 }
 primepalindrome();
+

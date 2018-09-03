@@ -10,7 +10,9 @@ function prime()
 {
     read.question("Enter the minNumber ",function(minNumber){
         read.question("Enter the maxNumber: ",function(maxNumber){
-        utility.prime(minNumber,maxNumber)
+            var a=parseInt(minNumber);
+            var b=parseInt(maxNumber);
+        utility.prime(a,b);
         read.close();
     });
         

@@ -10,7 +10,9 @@ function primeannagram()
 {
     read.question("Enter the minNumber ",function(minNumber){
         read.question("Enter the maxNumber: ",function(maxNumber){
-        utility.primeannagram(minNumber,maxNumber)
+            var a=parseInt(minNumber);
+            var b=parseInt(maxNumber);
+        utility.primeannagram(a,b);
         read.close();
     });
         
